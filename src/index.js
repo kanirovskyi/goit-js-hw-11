@@ -1,3 +1,5 @@
+import './css/index.css';
+
 import axios from "axios";
 import Notiflix from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
@@ -137,7 +139,7 @@ function templateImg({
 }) {
     return `<div class="photo-card">
     <a class="gallery__item" href="${largeImageURL}" data-caption="Likes ${likes} | Views ${views} | Comments ${comments} | Downloads ${downloads}">
-  <img src="${webformatURL}" alt="${tags}  &bull; Likes : ${likes}  &bull; Views : ${views}  &bull; Comments : ${comments}  &bull; Downloads : ${downloads}" loading="lazy" />
+  <img class="card-img" src="${webformatURL}" alt="${tags}  &bull; Likes : ${likes}  &bull; Views : ${views}  &bull; Comments : ${comments}  &bull; Downloads : ${downloads}" loading="lazy" />
   <div class="info">
     <p class="info-item">
       <b>Likes ${likes}</b>
